@@ -1,0 +1,12 @@
+.env
+.env.local
+.env.*.local
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+.DS_Store
+agent_traces.duckdb
+*.duckdb.wal
+*.duckdb.tmp
