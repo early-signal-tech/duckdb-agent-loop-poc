@@ -2,6 +2,10 @@
 
 A simple SQL-to-LLM agent harness using DuckDB and Anthropic's Claude API.
 
+# Companion Video
+
+[![Companion Video](https://github.com/user-attachments/assets/fffb2f69-a9ff-4c18-abf5-9d5dc004fd20)](https://www.youtube.com/watch?v=kVey_qIXAJk)
+
 ## Quick Start
 
 1. **Set up your API key**
