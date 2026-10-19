@@ -5,10 +5,21 @@ description = "SQL-to-LLM agent harness using DuckDB and Anthropic Claude"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "anthropic>=0.32.0",
-    "duckdb>=1.0.0",
+    # 1.x SDK: top-level cache_control and the context-management beta.
+    "anthropic>=1.5.0",
+    # Tested on 1.5.x (catalog functions, extract_statements, DuckLake READ_ONLY attach).
+    "duckdb>=1.5.0",
     "python-dotenv>=1.0.0",
 ]
 
 [tool.uv]
 package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "tests"]

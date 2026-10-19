@@ -1,12 +1,45 @@
+# Secrets (keep .env.example tracked)
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
 .venv/
 venv/
 .uv/
-.DS_Store
-agent_traces.duckdb
+
+# Tool caches and coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# DuckDB databases and traces
+*.duckdb
 *.duckdb.wal
 *.duckdb.tmp
+*.db
+*.db.wal
+.tmp/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Working notes (not tracked)
+DESIGN_NOTES.md
+TIER1_CHANGES.md
+AGENT_DESIGN.md
+PROJECT_SUMMARY.md
+UPGRADE_PLAN.md
